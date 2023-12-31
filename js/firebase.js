@@ -76,7 +76,7 @@ listAll(FirstYearBookRef)
               <a href="${url}" class="cards" target="_blank">
               <div class="cards">
                 <div class="image">
-                  <img src="../images/book.jpg" alt="">
+                  <img src="images/book.jpg" alt="">
                 </div>
                 <div class="notes">book</div>
                 <div class="title">
@@ -114,7 +114,7 @@ listAll(CS_2Ref)
               <a href="${url}" class="cards" target="_blank">
                 <div class="cards">
                   <div class="image">
-                    <img src="../images/book.jpg" alt="">
+                    <img src="images/book.jpg" alt="">
                   </div>
                   <div class="notes">book</div>
                   <div class="title">
@@ -150,7 +150,7 @@ listAll(CS_3Ref)
               <a href="${url}" class="cards" target="_blank">
                 <div class="cards">
                   <div class="image">
-                    <img src="../images/book.jpg" alt="">
+                    <img src="images/book.jpg" alt="">
                   </div>
                   <div class="notes">book</div>
                   <div class="title">
@@ -186,7 +186,7 @@ listAll(CS_4Ref)
               <a href="${url}" class="cards" target="_blank">
                 <div class="cards">
                   <div class="image">
-                    <img src="../images/book.jpg" alt="">
+                    <img src="images/book.jpg" alt="">
                   </div>
                   <div class="notes">book</div>
                   <div class="title">
@@ -225,7 +225,7 @@ listAll(ElectE_2Ref)
               <a href="${url}" class="cards" target="_blank">
                 <div class="cards">
                   <div class="image">
-                    <img src="../images/book.jpg" alt="">
+                    <img src="images/book.jpg" alt="">
                   </div>
                   <div class="notes">book</div>
                   <div class="title">
@@ -261,7 +261,7 @@ listAll(ElectE_3Ref)
               <a href="${url}" class="cards" target="_blank">
                 <div class="cards">
                   <div class="image">
-                    <img src="../images/book.jpg" alt="">
+                    <img src="images/book.jpg" alt="">
                   </div>
                   <div class="notes">book</div>
                   <div class="title">
@@ -300,7 +300,7 @@ listAll(ElectricalEng_2Ref)
               <a href="${url}" class="cards" target="_blank">
                 <div class="cards">
                   <div class="image">
-                    <img src="../images/book.jpg" alt="">
+                    <img src="images/book.jpg" alt="">
                   </div>
                   <div class="notes">book</div>
                   <div class="title">
@@ -336,7 +336,7 @@ listAll(ElectricalEng_3Ref)
               <a href="${url}" class="cards" target="_blank">
                 <div class="cards">
                   <div class="image">
-                    <img src="../images/book.jpg" alt="">
+                    <img src="images/book.jpg" alt="">
                   </div>
                   <div class="notes">book</div>
                   <div class="title">
