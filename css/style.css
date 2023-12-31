@@ -1,0 +1,779 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Public+Sans:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  /* color: #1d1c1c; */
+  color: var(--secondary-color);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: rgb(222, 222, 222); */
+  background-color: var(--primary-color);
+  /* background-color: black; */
+  /* overflow-y: hidden; */
+  /* min-height: 100vh; */
+  /* font-family: montserrat; */
+  /* background-attachment: fixed;
+  background-size: cover; */
+
+}
+
+:root{
+  --primary-color: #edf2fc;
+  --secondary-color: #212121;
+  --background-color: #fff;
+}
+
+.dark-theme{
+  --primary-color: #000106;
+  --secondary-color: #fff;
+  --background-color: #000106;
+}
+/* header { */
+  /* position: fixed; */
+  /* min-width: 1000px; */
+  /* width: 100%; */
+  /* height: 10vh; */
+  /* min-height: 80px; */
+  /* display: block; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  /* gap: 0.625rem; */
+  /* padding: 0.625rem 1.5625rem; */
+  /* background: #eee8e8; */
+  /* background: var(--primary-color); */
+  /* box-shadow: 0 2px 10px rgba(82, 80, 80, 0.384); */
+  /* z-index: 1000; Set a higher z-index value */
+
+/* } */
+
+  
+a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+a:hover {
+  cursor: pointer;
+  color: rgb(219, 101, 16);
+}
+
+a:active {
+  /* background: rgba(139, 133, 172, 0.5); */
+  background: var(--primary-color);
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  font-size: 1.25rem;
+}
+
+
+p {
+  font-size: 1.25rem;
+}
+
+
+.section {
+  margin-top: 10vh;
+  height: 80vh;
+  width: 90vw;
+  display: block;
+  flex-direction: column;
+  align-items: flex;
+}
+
+/* heaader starts here */
+
+nav {
+  position: fixed;
+  width: 100%;
+  background: var(--primary-color);
+  height: 80px;
+  width: 100%;
+  z-index: 1000; 
+  /* ho chuka hai */
+
+  /* display: flex; */
+  /* padding: 0 10px; */
+  /* height: 2.5rem; */
+  /* height: 80px; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  /* background: var(--primary-color); */
+  /* border: black 2px solid; */
+}
+
+label.logo{
+  /* ho chuka hai */
+  color: var(--secondary-color);
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav-ul {
+  float: right;
+  margin-right: 10px;
+  /* display: flex;
+  text-align: right;
+  margin-top: 2%;
+  padding: 0 0.625rem; */
+}
+
+.nav-ul li a.active{
+  background: var(--secondary-color);
+  color: var(--primary-color);
+}
+.nav-ul li a:hover{
+  background: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.nav-ul li {
+  /* padding: 0.125rem 0.9375rem; */
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+  /* margin-right: 10px; */
+}
+
+.nav-ul li a{
+  color: var(--secondary-color);
+  font-size: 17px;
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+
+
+.checkbtn{
+  font-size: 30px;
+  color: var(--primary-color);
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+@media (max-width: 520px){
+  label.logo{
+    font-size: 20px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 370px){
+  label.logo{
+    font-size: 15px;
+    padding-left: 15px;
+  }
+  nav ul li a{
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 1550px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: var(--primary-color);
+    top: 80px;
+    left: -100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s;
+  }
+  nav-ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav-ul li a{
+    font-size: 16px;
+  }
+  a:hover{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+
+  }
+  
+}
+
+
+/* heaader ends */
+
+
+
+
+
+
+
+
+.contact-ul {
+  list-style-type: circle;
+}
+
+
+
+/* cards started */
+.cards{
+  /* background-color: #ddddd5; */
+  user-select: none;
+  height: 250px;
+  padding: 0;
+  width: 10px;
+  border-radius: 5px;
+  border: 2px solid #dbd6d6;
+  overflow: hidden; /* Add this line */
+  min-width: 200px; /* Set a minimum width for the card container */
+  margin-right: 20px; /* Adjust the margin value as needed */
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  /* background-color: white; */
+  background-color: var(--primary-color);
+  
+}
+
+.cards:hover{
+  box-shadow: 2px 12px 15px #999;
+}
+
+.cards:last-child {
+  margin-right: 0; /* Remove margin from the last card */
+}
+
+.image img{
+  
+  max-width: 100%;
+  height: fit-content;
+}
+
+.notes {
+  margin-left: 10px;
+  padding: 2px 5px;
+  max-width: fit-content;
+  border: 1px solid #dbd6d6;
+}
+
+/* cards ends */
+
+
+/* acadmics */
+
+.slide-container{
+  max-width: 100%;
+  /* border: 2px solid black; */
+}
+
+.slide-content{
+  /* border: 2px solid black; */
+  overflow: hidden;
+  margin: 0 40px;
+  background-color: var(--primary-color);
+  border-radius: 25px;
+}
+
+.card-wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* padding: 0 25px; */
+}
+/* years started */
+.year-card{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  /* margin-bottom: 20px;   */
+  padding: 20px 20px 20px 20px;
+  justify-content: start;
+  min-width: 300px; 
+  flex-wrap: wrap;
+  /* border: 2px solid black; */
+  /* padding: 20px 20px 20px 20px; */
+  /* box-shadow: 2px 12px 15px #999; */
+  background-color: var(--background-color);
+}
+
+.yearName{
+  display: flex;
+  /* justify-content: center; */
+  margin-left: 20px;
+}
+.card-year{
+  flex-direction: row;
+  margin-right: 20px;
+  min-width: 300px; 
+  /* margin-bottom: 20px; */
+  padding: 20px 20px 20px 20px;
+  /* box-shadow: 2px 12px 15px #999; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  /* align-items: center; */
+  /* background-color: white;  */
+  box-sizing: border-box;
+  background-color: var(--background-color); 
+}
+
+@media only screen and (max-width: 768px) {
+  .card-year {
+    width: 100%; /* Make cards take full width on smaller screens */
+  }
+}
+
+.container{
+  box-sizing: border-box;
+  display: block;
+}
+
+.bookDisplay{
+  /* padding: 40px 40px; */
+  margin-bottom: 40px;
+  width: 100%;
+  width: 90vw;
+  display: block;
+  flex-direction: row;
+  align-items: flex;
+  /* margin-bottom: 500px; */
+  box-sizing: border-box;
+  overflow-x: hidden;
+  /* border: 2px solid white; */
+}
+
+.firstyear{
+  margin-top: 10vh;
+}
+
+@media only screen and (max-width: 550px) {
+  .firstyear{
+    margin-top: 12vh;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .firstyear{
+    margin-top: 15vh;
+  }
+}
+
+#scrollToTopBtn{
+  background: var(--primary-color);
+}
+.scrollDown{
+  color: var(--primary-color);
+}
+.title{
+  /* border: 2px solid blue; */
+  margin-left: 10px;
+  font-size: 9px;
+  margin-top: 5px;
+  /* padding-bottom: 20px; */
+  /* margin-bottom: 10px; */
+  margin-right: 10px;
+}
+
+#branchSelect{
+  background: var(--primary-color);
+}
+
+.academics {
+  font-weight: 1000;
+  padding: 10px;
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  display: inline-flex;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+
+/* Style the dropdown container */
+/* Style the select element */
+select {
+  width: fit-content;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* Style the options */
+option {
+  font-size: 16px;
+}
+
+/* Style the dropdown container */
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--secondary-color); /* Change the background color as needed */
+  color: var(--secondary-color); /* Change the text color as needed */
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  opacity: 1; /* Initially hide the button */
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* changing background color  */
+#toggle{
+  position: relative;
+  display: block;
+  width: 70px;
+  height: 35px;
+  border-radius: 160px;
+  cursor: pointer;
+  background: #fff;
+  transition: 1s;
+  box-shadow: inset 0 8px 60px rgba(0,0,0,0.1),
+              inset 0 8px 8px rgba(0,0,0,0.1),
+              inset 0 -4px 4px rgba(0,0,0,0.1);
+}
+
+#toggle .indicator{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  background: linear-gradient(to bottom, #ffffff, #fff);
+  border-radius: 50%;
+  transform: scale(0.9);
+  transition: 0.5s;
+  box-shadow: 0 8px 40px rgba(255, 255, 255, 0.5),
+              inset 0 4px 4px rgba(255, 255, 255, 0.2),
+              inset 0 -4px 4px rgba(255, 255, 255, 0.2);
+}
+
+#toggle.active .indicator{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  background: linear-gradient(to bottom, #444, #222);
+  border-radius: 50%;
+  transform: scale(0.9);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
+              inset 0 4px 4px rgba(255, 255, 255, 0.2),
+              inset 0 -4px 4px rgba(255, 255, 255, 0.2);
+  transition: 0.5s;
+}
+
+#toggle.active{
+  background: #222;
+}
+
+#toggle.active .indicator{
+  left: 35px;
+}
+/* changing ba  ckground color  */
+
+/* footer starts */
+footer {
+  background-color: var(--primary-color);
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
+
+
+.footerContainer{
+  width: 100%;
+  padding: 70px 30px 20px;
+}
+
+.socialIcons{
+  display: flex;
+  justify-content: center;
+}
+
+.socialIcons a{
+  text-decoration: none;
+  padding: 10px;
+  background-color: var(--primary-color);
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.socialIcons a i{
+font-size: 2em;
+color: var(--secondary-color);
+opacity: 0.9;
+}
+
+.socialIcons a:hover{
+background-color: var(--secondary-color);
+transition: 0.5s;
+}
+.socialIcons a:hover i{
+  color: var(--primary-color);
+  transition: 0.5s;
+
+}
+
+.footerNav{
+  margin: 30px 0;
+}
+
+.footerNav ul{
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.footerNav ul li a{
+  color: var(--secondary-color);
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transform: 0.5s;
+}
+
+.footerNav ul li a:hover{
+  opacity: 1;
+}
+
+.footerBottom{
+  /* background-color: var(--primary-color); */
+  padding: 20px;
+  text-align: center;
+}
+
+.designer{
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+
+@media (max-width: 700px){
+  .footerNav ul{
+    flex-direction: column;
+  }
+  .footerNav ul li{
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+  }
+
+}
+
+
+/* footer ends */
+
+/* team mates starts */
+
+.containerTeam{
+  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+@media (max-height: 600px) {
+  .containerTeam{
+    margin-top: 50px;
+  }
+}
+@media (max-height: 500px) {
+  .containerTeam{
+    margin-top: 100px;
+  }
+}
+.teamName{
+  font-weight: bold;
+}
+
+.slide-containerTeam{
+  max-width: 1055px;
+  width: 100%;
+  background-color: var(--primary-color);
+}
+
+.cardTeam{
+  user-select: none;
+  border-radius: 25px;
+  background-color: var(--background-color);
+  max-width: 300px;
+}
+
+.image-contentTeam, .card-content{
+  padding: 10px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-contentTeam{
+  row-gap: 5px;
+  position: relative;
+  padding: 25px 0;
+
+}
+
+.swiper-navBtn{
+  transition: color 0.3s ease;
+  color: var(--primary-color);
+}
+
+.swiper-navBtn:hover{
+  color: var(--secondary-color);
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 40px;
+}
+
+.swiper-button-next{
+  right: 0;
+}
+
+.swiper-button-prev{
+  left: 0;
+}
+
+.swiper-pagination-bullet{
+  background-color: var(--background-color);
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active{
+  background-color: var(--secondary-color);
+}
+
+.overlay{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: var(--secondary-color);
+  border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before,
+.overlay::after{
+  content: '';
+  right: 0;
+  bottom: -40px;
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background-color: var(--secondary-color);
+}
+
+.overlay::after{
+  border-radius: 0 25px 0 0;
+  background-color: var(--background-color);
+
+}
+
+
+.card-image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  padding: 3px;
+}
+
+.card-image .card-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--secondary-color);
+}
+
+.name{
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+
+.description{
+  font-size: 14px;
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+.button{
+  border: none;
+  font-size: 15px;
+  color: var(--background-color);
+  background-color: var(--secondary-color);
+  padding: 8px 16px;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3 ease;
+}
+
+.button:hover{
+  background: var(--background-color);
+  color: var(--secondary-color);
+}
+
+@media screen and (max-width) {
+  .slide-content{
+    margin: 0 10px;
+  }
+  .swiper-navBtn{
+    display: none;
+  }
+}
+
+
+
+/* team mates ends */
+

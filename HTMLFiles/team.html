@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Awesome books</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+
+    <a href="index.html" class="logo">
+      <label class="logo">B.Tech Library</label>
+    </a>
+    <ul class="nav-ul">
+      <li><a href="../index.html">Home</a></li>
+      <li><a class="navLink" href="notes.html">Hand Written Notes</a></li>
+      <li><a class="navLink" href="quantum.html">Quantum</a></li>
+      <li><a class="navLink" href="https://forms.gle/WnSj8ozToJahRi4PA" target="_blank">Contact Us</a></li>
+      <li><a class="active" href="team.html">Our Team</a></li>
+      <li><div id="toggle"><i class="indicator"></i></div></li>
+    </ul>
+
+  </nav>
+
+  <div class="containerTeam">
+    <div class="teamName">Meet Our Team Members</div>
+    <div class="slide-containerTeam swiper">
+      <div class="slide-content">
+        <div class="card-wrapperTeam swiper-wrapper">
+
+          <div class="cardTeam swiper-slide">
+            <div class="image-contentTeam">
+              <span class="overlay"></span>
+              <div class="card-image">
+                <img src="../images/abhishek1.jpeg" alt="" class="card-img">
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="name">Abhishek Verma</h2>
+              <p class="description">I am from 3rd year, CS Department<br>My Role : Javascript</p>
+              <a href="https://www.linkedin.com/in/abhishek-verma-b39878228/" target="_blank"><button class="button">View More</button></a>
+            </div>
+
+          </div>
+
+          <div class="cardTeam swiper-slide">
+            <div class="image-contentTeam">
+              <span class="overlay"></span>
+              <div class="card-image">
+                <img src="../images/vikas.jpeg" alt="" class="card-img">
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="name">Vikas Kumar</h2>
+              <p class="description">I am from 3rd year, CSE Department<br>My Role : Firebase Storage</p>
+              <a href="https://www.linkedin.com/in/vikas-kumar-48429924b/" target="_blank"><button class="button">View More</button></a>
+            </div>
+
+          </div>
+          
+          <div class="cardTeam swiper-slide">
+            <div class="image-contentTeam">
+              <span class="overlay"></span>
+              <div class="card-image">
+                <img src="../images/aish.jpeg" alt="" class="card-img">
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="name">Aish Mishra</h2>
+              <p class="description">I am from 2nd year, IT Department<br>My Role : Designing</p>
+              <a href="https://www.linkedin.com/in/aish-mishra-b24a52237/" target="_blank"><button class="button">View More</button></a>
+            </div>
+
+          </div>
+          <div class="cardTeam swiper-slide">
+            <div class="image-contentTeam">
+              <span class="overlay"></span>
+              <div class="card-image">
+                <img src="../images/aditya.jpeg" alt="" class="card-img">
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="name">Aditya Maheswari</h2>
+              <p class="description">I am from 2nd year, CS Department<br>My Role : HTML & CSS</p>
+              <a href="https://www.linkedin.com/in/aditya-maheshwari-5b0635266/" target="_blank"><button class="button">View More</button></a>
+            </div>
+
+          </div>
+          <div class="cardTeam swiper-slide">
+            <div class="image-contentTeam">
+              <span class="overlay"></span>
+              <div class="card-image">
+                <img src="../images/abhishek2.jpeg" alt="" class="card-img">
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="name">Abhishek Rajput</h2>
+              <p class="description">I am from 3rd year, CS Department<br>My Role : Deployment</p>
+              <a href="https://www.linkedin.com/in/abhishek-rajput-8b4004257/" target="_blank"><button class="button">View More</button></a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next swiper-navBtn"></div>
+      <div class="swiper-button-prev swiper-navBtn"></div>
+      <div class="swiper-scrollbar"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
+  <!-- footer container -->
+  <footer>
+    <div class="footerContainer">
+      <div class="socialIcons">
+        <a href="https://www.instagram.com/abhi_verma_630/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://twitter.com/2125cs1113?t=W_CEp84UWAxR8YtRnfzNTQ" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/abhishek-verma-b39878228/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/Pseudo-iitian" target="_blank"><i class="fa-brands fa-github"></i></a>
+      </div>
+      <div class="footerNav">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="notes.html">Hand Written Notes</a></li>
+          <li><a href="quantum.html">Quantum</a></li>
+          <li><a href="https://forms.gle/WnSj8ozToJahRi4PA" target="_blank">Contact Us</a></li>
+          <li><a href="team.html">Our Team</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footerBottom">
+      <p>Copyright &copy; 2024; Designed by <span class="designer">Team</span></p>
+    </div>
+  </footer>
+
+
+  <button id="scrollToTopBtn"><span class="scrollDown">&#8593;</span></button>
+
+  <script type="module" src="../js/swiperTeam.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.js"></script>
+  <script type="module" src="../js/quantum.js"></script>
+  <!-- <script src="firebase/index.js"></script> -->
+</body>
+
+</html>
